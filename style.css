@@ -1,0 +1,209 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+     background-color:  white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+}
+.top-right-text{
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    font-size: 40px;
+    color: #e3cb6d;
+    padding: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #e3cb6d;
+    font-weight: 500;
+    
+}
+.navbar a:hover{
+    color: antiquewhite;
+}
+ul,li{
+    display:flex;
+    gap: 20px;
+    padding: 5px;
+    margin: 2px;
+}
+/* .top-right-text p{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(28, end) blink-caret 0.5s step-end infinite;
+}
+@keyframes typing{
+    from{ width:0; }
+    to{ width: 100%; }
+}
+@keyframes blink-caret{
+    0%, 100% { border-color: transparent; }
+    50% { border-color: black; }
+}  */
+  .top-right-text{
+      font-family: monospace;
+      font-size: 40px;
+      font-weight: bold;
+      font-style: italic;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid black;
+      width: fit-content;
+
+      animation: 
+        typewriter 4s steps(23, end) 1s infinite,
+        blink-caret 0.5s step-end infinite;
+    }
+
+    @keyframes typewriter {
+      0% {
+        width: 0;
+      }
+      40% {
+        width: 23ch; /* Typing ends */
+      }
+      60% {
+        width: 23ch; /* Pause before deleting */
+      }
+      100% {
+        width: 0; /* Deleted */
+      }
+    }
+
+    @keyframes blink-caret {
+      0%, 100% { border-color: transparent }
+      50% { border-color: black }
+    }
+    .landing{
+        height: 100%;
+        width: 90%;
+        margin: 10px;
+        padding: 10px;
+    }
+    .land{
+        display: flex;
+        gap: 10px;
+    }
+    .my-photo{
+        border-radius: 100% / 100%;
+        border: 4px solid transparent;
+        box-shadow: 0 0 20px 5px  #e3cb6d;
+        object-fit: cover;
+    }
+    .about{
+       margin-top:100px;
+       margin-left: 200px;
+    }
+    h1{
+        font-size: 60px;
+        
+        margin-bottom: 0px;
+        padding-bottom:0px;
+        padding: 0%;
+    }
+    h2{
+        font-size:30px;
+        color:black;
+        margin:2pxpx;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .name{
+        color:  #e3cb6d;
+    }
+    button{
+        margin-top: 20px;
+        font-weight: 100;
+        height: 50px;
+        width: 70px;
+        border-radius: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: blanchedalmond;
+    }
+    .intro{
+        padding: 0px;
+       font-size: larger;
+        word-spacing: 1px;
+        height: 20%;
+        width: 100%;
+        margin: 1px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+
+    .skill{
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-bottom: 50px;
+    }
+    .container{
+        padding: 10px;
+        display:flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .item{
+       
+     width: calc((100% / 3) - 20px);
+       text-align: center;  
+       border: 1px solid #f2c07a;
+       padding: 6px 14px;
+       display: inline-block;
+       box-shadow: 0 0 8px #e3cb6d;
+       border-radius: 8px;
+       padding: 5px;
+       margin: 2px;
+    }
+    h5{
+        font-size: x-large;
+        padding: 2px;
+        margin: 0px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    .form{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        
+        
+
+    }
+    .my_form{
+        width: 300px;         /* Increase width */
+  height: 300px;        /* Increase height */
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5pxpx;
+    }
+    
+    footer{
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        height: 100px;
+        margin-top: 20px;
+  
+    }
+
+
+    
+
+
+    
